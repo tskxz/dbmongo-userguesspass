@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome User</h2>
+        <p>You have access to the user page!</p>
+        <form method="POST" action="{{ url_for('guess_password') }}">
+            <label for="password_guess">Enter Admin Password:</label>
+            <input type="password" id="password_guess" name="password_guess" required>
+            <button type="submit">Try Your Luck</button>
+        </form>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
