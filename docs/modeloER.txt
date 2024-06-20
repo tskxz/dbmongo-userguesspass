@@ -1,0 +1,10 @@
+Modelo de entidade-relacionamento (ER):
+Entidade Users
+    id (Primary Key): Inteiro, auto-incremento
+    username: String, único
+    password: String
+    role: String (por exemplo, 'admin', 'user')
+    admin_access: Inteiro (0 ou 1)
+
+Relacionamentos
+Nesta aplicação simples, tudo está contido em uma única tabela users, portanto, não há necessidade de relações entre múltiplas tabelas. 
